@@ -1,0 +1,1189 @@
+/* =========================================================
+JESÚS & VIVIANA — WEDDING INVITATION
+Elegant & Minimalist
+========================================================= */
+
+/* =========================================================
+VARIABLES
+========================================================= */
+
+:root {
+
+
+--color-background: #f7f4ef;
+--color-background-dark: #eee9e1;
+
+--color-white: #ffffff;
+
+--color-text: #2d2a27;
+--color-text-light: #77716a;
+
+--color-gold: #b59a6a;
+--color-gold-light: #d4c3a2;
+
+--font-title: "Cormorant Garamond", serif;
+--font-body: "Montserrat", sans-serif;
+
+--container: 1100px;
+
+--transition: 0.4s ease;
+
+
+}
+
+/* =========================================================
+RESET
+========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+
+
+background: var(--color-background);
+
+color: var(--color-text);
+
+font-family: var(--font-body);
+
+font-size: 15px;
+
+line-height: 1.7;
+
+overflow-x: hidden;
+
+
+}
+
+img {
+
+
+display: block;
+
+width: 100%;
+
+
+}
+
+a {
+
+
+color: inherit;
+
+text-decoration: none;
+
+
+}
+
+button,
+a {
+
+
+-webkit-tap-highlight-color: transparent;
+
+
+}
+
+/* =========================================================
+CONTENEDOR
+========================================================= */
+
+.section-container {
+
+
+width: min(
+    calc(100% - 40px),
+    var(--container)
+);
+
+margin: 0 auto;
+
+
+}
+
+/* =========================================================
+ELEMENTOS GENERALES
+========================================================= */
+
+.eyebrow {
+
+
+margin-bottom: 18px;
+
+color: var(--color-gold);
+
+font-family: var(--font-body);
+
+font-size: 10px;
+
+font-weight: 500;
+
+letter-spacing: 4px;
+
+text-transform: uppercase;
+
+
+}
+
+h1,
+h2,
+h3 {
+
+
+font-family: var(--font-title);
+
+font-weight: 400;
+
+
+}
+
+h2 {
+
+
+font-size: clamp(
+    42px,
+    6vw,
+    68px
+);
+
+line-height: 1;
+
+
+}
+
+.section-text {
+
+
+max-width: 580px;
+
+margin: 30px auto 0;
+
+color: var(--color-text-light);
+
+font-size: 14px;
+
+line-height: 2;
+
+
+}
+
+/* =========================================================
+HERO
+========================================================= */
+
+.hero {
+
+
+position: relative;
+
+min-height: 100svh;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+overflow: hidden;
+
+color: var(--color-white);
+
+text-align: center;
+
+
+}
+
+/* Imagen */
+
+.hero-image {
+
+
+position: absolute;
+
+inset: 0;
+
+width: 100%;
+
+height: 100%;
+
+object-fit: cover;
+
+object-position: center;
+
+animation: heroZoom 18s ease-out forwards;
+
+
+}
+
+/* Capa sobre la imagen */
+
+.hero-overlay {
+
+
+position: absolute;
+
+inset: 0;
+
+background:
+
+    linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.18),
+        rgba(0, 0, 0, 0.40)
+    );
+
+
+}
+
+/* Contenido */
+
+.hero-content {
+
+
+position: relative;
+
+z-index: 2;
+
+width: min(
+    calc(100% - 40px),
+    800px
+);
+
+animation: heroContent 1.4s ease both;
+
+
+}
+
+.hero .eyebrow {
+
+
+color: rgba(255,255,255,.85);
+
+margin-bottom: 28px;
+
+
+}
+
+.hero h1 {
+
+
+font-size: clamp(
+    70px,
+    12vw,
+    145px
+);
+
+line-height: .75;
+
+letter-spacing: -2px;
+
+
+}
+
+.hero h1 span {
+
+
+display: block;
+
+margin: 18px 0;
+
+color: var(--color-gold-light);
+
+font-size: .45em;
+
+line-height: 1;
+
+
+}
+
+.hero-date {
+
+
+margin-top: 38px;
+
+font-size: 12px;
+
+font-weight: 500;
+
+letter-spacing: 5px;
+
+
+}
+
+.hero-button {
+
+
+display: inline-flex;
+
+align-items: center;
+
+justify-content: center;
+
+margin-top: 45px;
+
+padding: 14px 32px;
+
+border: 1px solid rgba(255,255,255,.7);
+
+border-radius: 100px;
+
+background: rgba(255,255,255,.08);
+
+backdrop-filter: blur(8px);
+
+font-size: 11px;
+
+letter-spacing: 1.5px;
+
+transition: var(--transition);
+
+
+}
+
+.hero-button:hover {
+
+
+background: var(--color-white);
+
+color: var(--color-text);
+
+transform: translateY(-3px);
+
+
+}
+
+/* =========================================================
+INDICADOR SCROLL
+========================================================= */
+
+.scroll-indicator {
+
+
+position: absolute;
+
+z-index: 3;
+
+bottom: 35px;
+
+left: 50%;
+
+transform: translateX(-50%);
+
+color: rgba(255,255,255,.8);
+
+font-size: 12px;
+
+animation: scrollIndicator 2s infinite;
+
+
+}
+
+/* =========================================================
+INVITACIÓN
+========================================================= */
+
+.invitation {
+
+
+padding: 150px 0;
+
+text-align: center;
+
+
+}
+
+.invitation h2 {
+
+
+margin-bottom: 35px;
+
+
+}
+
+.intro-text {
+
+
+width: min(
+    100%,
+    570px
+);
+
+margin: auto;
+
+color: var(--color-text-light);
+
+font-size: 15px;
+
+line-height: 2;
+
+
+}
+
+/* =========================================================
+FECHA
+========================================================= */
+
+.date-block {
+
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+gap: 30px;
+
+margin-top: 70px;
+
+
+}
+
+.date-block span {
+
+
+display: block;
+
+
+}
+
+.date-day,
+.date-year {
+
+
+font-family: var(--font-title);
+
+font-size: 26px;
+
+
+}
+
+.date-month {
+
+
+padding: 12px 25px;
+
+border-top: 1px solid var(--color-gold);
+
+border-bottom: 1px solid var(--color-gold);
+
+color: var(--color-gold);
+
+font-size: 12px;
+
+font-weight: 500;
+
+letter-spacing: 3px;
+
+
+}
+
+/* =========================================================
+FOTOGRAFÍAS
+========================================================= */
+
+.photos {
+
+
+padding: 120px 0 150px;
+
+background: var(--color-white);
+
+text-align: center;
+
+
+}
+
+.photos h2 {
+
+
+margin-bottom: 70px;
+
+
+}
+
+/* Grid */
+
+.photo-grid {
+
+
+display: grid;
+
+grid-template-columns: repeat(2, 1fr);
+
+gap: 18px;
+
+text-align: left;
+
+
+}
+
+/* Foto */
+
+.photo {
+
+
+overflow: hidden;
+
+
+}
+
+.photo img {
+
+
+width: 100%;
+
+height: 100%;
+
+min-height: 350px;
+
+object-fit: cover;
+
+transition:
+    transform 1s ease;
+
+
+}
+
+.photo:hover img {
+
+
+transform: scale(1.04);
+
+
+}
+
+/* Foto grande */
+
+.photo-large {
+
+
+grid-row: span 2;
+
+
+}
+
+.photo-large img {
+
+
+min-height: 718px;
+
+
+}
+
+/* Foto horizontal */
+
+.photo-wide {
+
+
+grid-column: span 2;
+
+
+}
+
+.photo-wide img {
+
+
+min-height: 450px;
+
+
+}
+
+/* =========================================================
+EVENTOS
+========================================================= */
+
+.event,
+.lunch {
+
+
+padding: 150px 0;
+
+text-align: center;
+
+
+}
+
+.event {
+
+
+background: var(--color-background);
+
+
+}
+
+.lunch {
+
+
+background: var(--color-background-dark);
+
+
+}
+
+/* Tarjeta */
+
+.event-card {
+
+
+width: min(
+    calc(100% - 20px),
+    520px
+);
+
+margin: 60px auto 0;
+
+padding: 65px 40px;
+
+background: var(--color-white);
+
+text-align: center;
+
+
+}
+
+.event-icon {
+
+
+width: 58px;
+
+height: 58px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+margin: 0 auto 30px;
+
+border: 1px solid var(--color-gold-light);
+
+border-radius: 50%;
+
+color: var(--color-gold);
+
+
+}
+
+.event-card h3 {
+
+
+margin-bottom: 20px;
+
+font-size: 38px;
+
+
+}
+
+.event-date {
+
+
+margin-bottom: 8px;
+
+color: var(--color-gold);
+
+font-size: 12px;
+
+font-weight: 500;
+
+letter-spacing: 3px;
+
+
+}
+
+.event-time {
+
+
+margin-bottom: 25px;
+
+font-size: 13px;
+
+font-weight: 500;
+
+letter-spacing: 2px;
+
+
+}
+
+.event-place {
+
+
+margin-top: 20px;
+
+font-family: var(--font-title);
+
+font-size: 26px;
+
+
+}
+
+.event-address {
+
+
+margin-top: 8px;
+
+color: var(--color-text-light);
+
+font-size: 12px;
+
+
+}
+
+/* Botón ubicación */
+
+.event-button {
+
+
+display: inline-flex;
+
+align-items: center;
+
+gap: 10px;
+
+margin-top: 35px;
+
+padding: 12px 24px;
+
+border: 1px solid var(--color-gold);
+
+color: var(--color-gold);
+
+font-size: 10px;
+
+font-weight: 500;
+
+letter-spacing: 1.5px;
+
+text-transform: uppercase;
+
+transition: var(--transition);
+
+
+}
+
+.event-button:hover {
+
+
+background: var(--color-gold);
+
+color: var(--color-white);
+
+
+}
+
+/* =========================================================
+CONFIRMACIÓN
+========================================================= */
+
+.confirmation {
+
+
+padding: 160px 0;
+
+background: var(--color-text);
+
+color: var(--color-white);
+
+text-align: center;
+
+
+}
+
+.confirmation .eyebrow {
+
+
+color: var(--color-gold-light);
+
+
+}
+
+.confirmation h2 {
+
+
+color: var(--color-white);
+
+
+}
+
+.confirmation .section-text {
+
+
+color: rgba(255,255,255,.65);
+
+
+}
+
+/* WhatsApp */
+
+.whatsapp-button {
+
+
+display: inline-flex;
+
+align-items: center;
+
+gap: 12px;
+
+margin-top: 45px;
+
+padding: 16px 30px;
+
+border: 1px solid rgba(255,255,255,.35);
+
+border-radius: 100px;
+
+color: var(--color-white);
+
+font-size: 11px;
+
+font-weight: 500;
+
+letter-spacing: 1px;
+
+transition: var(--transition);
+
+
+}
+
+.whatsapp-button i {
+
+
+font-size: 18px;
+
+
+}
+
+.whatsapp-button:hover {
+
+
+background: var(--color-white);
+
+color: var(--color-text);
+
+transform: translateY(-3px);
+
+
+}
+
+/* =========================================================
+FOOTER
+========================================================= */
+
+.footer {
+
+
+padding: 70px 20px;
+
+background: var(--color-background);
+
+color: var(--color-text-light);
+
+text-align: center;
+
+
+}
+
+.footer-names {
+
+
+margin-bottom: 15px;
+
+color: var(--color-text);
+
+font-family: var(--font-title);
+
+font-size: 42px;
+
+
+}
+
+.footer p:not(.footer-names) {
+
+
+font-size: 11px;
+
+
+}
+
+.footer-heart {
+
+
+display: block;
+
+margin-top: 25px;
+
+color: var(--color-gold);
+
+font-family: var(--font-title);
+
+font-size: 28px;
+
+
+}
+
+/* =========================================================
+ANIMACIONES
+========================================================= */
+
+@keyframes heroZoom {
+
+
+from {
+
+    transform: scale(1);
+
+}
+
+to {
+
+    transform: scale(1.08);
+
+}
+
+
+}
+
+@keyframes heroContent {
+
+
+from {
+
+    opacity: 0;
+
+    transform: translateY(30px);
+
+}
+
+to {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+}
+
+@keyframes scrollIndicator {
+
+
+0%,
+100% {
+
+    opacity: .4;
+    transform: translate(-50%, 0);
+
+}
+
+50% {
+
+    opacity: 1;
+
+    transform: translate(-50%, 8px);
+
+}
+
+
+}
+
+/* =========================================================
+RESPONSIVE
+========================================================= */
+
+@media (max-width: 700px) {
+
+
+/* General */
+
+.section-container {
+
+    width: min(
+        calc(100% - 30px),
+        var(--container)
+    );
+
+}
+
+
+/* Hero */
+
+.hero h1 {
+
+    font-size: clamp(
+        65px,
+        20vw,
+        100px
+    );
+
+    letter-spacing: -1px;
+
+}
+
+
+.hero h1 span {
+
+    margin: 14px 0;
+
+}
+
+
+.hero-date {
+
+    margin-top: 30px;
+
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+}
+
+
+/* Invitación */
+
+.invitation {
+
+    padding: 110px 0;
+
+}
+
+
+.date-block {
+
+    gap: 15px;
+
+    margin-top: 55px;
+
+}
+
+
+.date-day,
+.date-year {
+
+    font-size: 22px;
+
+}
+
+
+.date-month {
+
+    padding: 10px 15px;
+
+    font-size: 10px;
+
+}
+
+
+/* Fotos */
+
+.photos {
+
+    padding: 100px 0;
+
+}
+
+
+.photo-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+
+}
+
+
+.photo-large {
+
+    grid-row: auto;
+
+}
+
+
+.photo-large img,
+.photo img,
+.photo-wide img {
+
+    min-height: 420px;
+
+}
+
+
+.photo-wide {
+
+    grid-column: auto;
+
+}
+
+
+/* Eventos */
+
+.event,
+.lunch {
+
+    padding: 110px 0;
+
+}
+
+
+.event-card {
+
+    padding: 50px 25px;
+
+}
+
+
+.event-card h3 {
+
+    font-size: 34px;
+
+}
+
+
+.event-place {
+
+    font-size: 23px;
+
+}
+
+
+/* Confirmación */
+
+.confirmation {
+
+    padding: 120px 20px;
+
+}
+
+
+.whatsapp-button {
+
+    padding: 15px 22px;
+
+}
+
+
+/* Footer */
+
+.footer {
+
+    padding: 60px 20px;
+
+}
+
+
+.footer-names {
+
+    font-size: 36px;
+
+}
+
+
+}
