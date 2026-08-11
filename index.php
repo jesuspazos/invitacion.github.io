@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesús & Viviana | Nuestra Boda</title>
+    <meta name="description" content="Jesús & Viviana - Nos casamos. Te invitamos a compartir este día tan especial con nosotros.">
+
+    <!-- Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap"rel="stylesheet">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     PORTADA
+====================================================== -->
+
+    <section class="hero" id="inicio">
+
+        <img
+            src="img/portada.jpg"
+            alt="Jesús y Viviana"
+            class="hero-image"
+        >
+
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="eyebrow">NUESTRA BODA</p>
+            <h1>Jesús<span>&amp;</span>Viviana</h1>
+            <p class="hero-date">[ 21 de agosto de 2026 ]</p>
+            <a href="#invitacion" class="hero-button">Ver invitación</a>
+        </div>
+
+        <div class="scroll-indicator">
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- =====================================================
+     INVITACIÓN
+    ====================================================== -->
+
+    <main>
+        <section class="invitation" id="invitacion">
+            <div class="section-container">
+                <p class="eyebrow">
+                    CON MUCHO AMOR
+                </p>
+                <h2>
+                    Jesús &amp; Viviana
+                </h2>
+
+                <p class="intro-text">
+                    Tenemos el gusto de invitarte a compartir
+                    con nosotros uno de los días más importantes
+                    de nuestras vidas.
+                </p>
+
+                <div class="date-block">
+                    <span class="date-day">
+                        21 
+                    </span>
+
+                    <span class="date-month">
+                        agosto
+                    </span>
+
+                    <span class="date-year">
+                         2026 
+                    </span>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             FOTOS
+        ================================================== -->
+
+        <section class="photos" id="fotos">
+            <div class="section-container">
+
+                <p class="eyebrow">
+                    NUESTROS MOMENTOS
+                </p>
+
+                <h2>
+                    Un poco de nuestra historia
+                </h2>
+
+                <div class="photo-grid">
+                    <figure class="photo photo-large">
+                        <img
+                            src="img/foto-1.jpg"
+                            alt="Jesús y Viviana"
+                        >
+                    </figure>
+
+                    <figure class="photo">
+                        <img
+                            src="img/foto-2.jpg"
+                            alt="Jesús y Viviana"
+                        >
+                    </figure>
+
+                    <figure class="photo">
+                        <img
+                            src="img/foto-3.jpg"
+                            alt="Jesús y Viviana"
+                        >
+                    </figure>
+
+                    <figure class="photo photo-wide">
+                        <img
+                            src="img/foto-4.jpg"
+                            alt="Jesús y Viviana"
+                        >
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             CEREMONIA
+        ================================================== -->
+
+        <section class="event" id="boda">
+
+            <div class="section-container">
+
+                <p class="eyebrow">
+                    EL GRAN DÍA
+                </p>
+
+                <h2>
+                    Nuestra boda
+                </h2>
+
+                <div class="event-card">
+
+                    <div class="event-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
+                    <h3>
+                        Ceremonia
+                    </h3>
+
+                    <p class="event-date">
+                        21 de agosto de 2026
+                    </p>
+
+                    <p class="event-time">
+                        09:00 hrs
+                    </p>
+
+                    <p class="event-place">
+                        Registro civil No 15
+                    </p>
+
+                    <p class="event-address">
+                        Calle 95 Núm. 504 por 62A y 64, Colonia Delio Moreno Cantón, C.P. 97268, Mérida, Yucatán
+                    </p>
+
+                    <a
+                        href="https://maps.app.goo.gl/aKLTuCkN2fY8pnjw5"
+                        class="event-button"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                    <i class="fa-solid fa-location-dot"></i>
+                        Ver ubicación
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             ALMUERZO
+        ================================================== -->
+
+        <section class="lunch" id="almuerzo">
+
+            <div class="section-container">
+
+                <p class="eyebrow">
+                    DESPUÉS DE LA CEREMONIA
+                </p>
+
+                <h2>
+                    Compartamos un almuerzo
+                </h2>
+
+                <p class="section-text">
+                    Después de la ceremonia queremos compartir
+                    contigo un pequeño almuerzo para celebrar
+                    juntos este momento tan especial.
+                </p>
+
+                <div class="event-card">
+                    <div class="event-icon">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+
+                    <h3>
+                        Almuerzo
+                    </h3>
+
+                    <p class="event-time">
+                        14:00 hras
+                    </p>
+
+                    <p class="event-place">
+                        Rancho Da Picanha
+                    </p>
+
+                    <p class="event-address">
+                        Esquina Calle 50, Av Pérez Ponce 407
+                    </p>
+
+                    <a
+                        href="https://maps.app.goo.gl/XATa2auNn9jHumGNA"
+                        class="event-button"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <i class="fa-solid fa-location-dot"></i>
+                        Ver ubicación
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             CONFIRMACIÓN WHATSAPP
+        ================================================== -->
+
+        <section class="confirmation" id="confirmacion">
+
+            <div class="section-container">
+
+                <p class="eyebrow">
+                    TU PRESENCIA ES IMPORTANTE
+                </p>
+
+                <h2>
+                    ¿Nos acompañas?
+                </h2>
+
+                <p class="section-text">
+                    Nos encantará compartir este día contigo.
+                    Por favor, confirma tu asistencia enviándonos
+                    un mensaje por WhatsApp.
+                </p>
+
+                <a
+                    href="https://wa.me/5219992791390?text=Hola%20Jes%C3%BAs%20y%20Viviana%2C%20quiero%20confirmar%20mi%20asistencia%20a%20su%20boda."
+                    class="whatsapp-button"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Confirmar por WhatsApp
+                </a>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <p class="footer-names">
+            Jesús &amp; Viviana
+        </p>
+
+        <p>
+            Con amor, esperamos compartir este día contigo.
+        </p>
+
+        <span class="footer-heart">
+            ♡
+        </span>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
